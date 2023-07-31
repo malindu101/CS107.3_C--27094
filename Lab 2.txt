@@ -1,0 +1,187 @@
+1)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp15
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            Console.WriteLine("Enter number 1");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter number 2");
+            int a = int.Parse(Console.ReadLine());
+            int c = a + b;
+
+
+            Console.WriteLine("summation is " +c);
+            
+            Console.ReadLine();
+
+        }
+    }
+}
+
+
+2)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp15
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            Console.WriteLine("Enter number 1 ");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter number 2");
+            int a = int.Parse(Console.ReadLine());
+            int c = a +b;
+            int d = b - a;
+            int e = b * a;
+            int f = b / a;
+
+
+            Console.WriteLine("sum " +c);
+            Console.WriteLine("Subtraction " + d);
+            Console.WriteLine("Multiplication " + e);
+            Console.WriteLine("Division " + f);
+
+            Console.ReadLine();
+
+        }
+    }
+}
+
+
+3)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp15
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Enter radius ");
+            int b = int.Parse(Console.ReadLine());
+
+
+
+            int c = b * b * 22 / 7;
+            int d = 2 * b * 22 / 7;
+
+
+
+            Console.WriteLine("Area is " + c);
+            Console.WriteLine("circumference is "+d);
+
+            Console.ReadLine();
+
+        }
+    }
+}
+
+
+4)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp15
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Enter Number ");
+            int b = int.Parse(Console.ReadLine());
+
+            if (b%2 == 0)
+            {
+                Console.WriteLine("Even");
+            }
+            else
+            {
+                Console.WriteLine("Odd");
+            }
+            
+
+
+
+            
+            
+
+            Console.ReadLine();
+
+        }
+    }
+}
+
+
+5)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp15
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a;
+
+            for(int i =1; i <10; i++)
+            {
+                Console.WriteLine("Enter Number "+i);
+                int b = int.Parse(Console.ReadLine());  
+                if (b % 2 == 0)
+                {
+                    Console.WriteLine("Even");
+                }
+                else
+                {
+                    Console.WriteLine("Odd");
+                }
+            }
+
+               
+
+
+
+            
+            
+
+            Console.ReadLine();
+
+        }
+    }
+}
+
+

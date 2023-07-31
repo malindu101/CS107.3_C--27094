@@ -1,0 +1,181 @@
+
+3)
+
+using ConsoleApp27;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp26
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("select an operation");
+            Console.WriteLine("1.add");
+            Console.WriteLine("2.sub");
+            Console.WriteLine("3.mul");
+            Console.WriteLine("4.divi");
+
+            Console.WriteLine("Enter Choice");
+            int ch = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Fist number");
+            int FN = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Second Number");
+            int SN = int.Parse(Console.ReadLine());
+
+            int results;
+            switch (ch)
+            {
+                case 1:
+                    results = FN + SN; break;
+
+                case 2:
+                    results = FN - SN; break;
+
+                case 3:
+                    results = FN * SN; break;
+
+                case 4:
+                    results = FN / SN; break;
+
+                default:
+                    Console.WriteLine("Inavlid");
+                    return;
+            }
+
+
+            Console.WriteLine("Answer is " + results);
+            Console.ReadLine();
+
+        }
+
+    }
+}
+
+
+4)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp28
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            FileName get = new FileName();
+            get.helloworld();
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp28
+{
+    internal class FileName
+    {
+        private void helloworld()
+        {
+            Console.WriteLine("Hello world");
+        }
+    }
+}
+
+can't access it because the class is private.
+
+
+5)
+
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp28
+{
+    internal class FileName
+    {
+        public void mini(int[] numbers)
+        {
+           int min = numbers[0] ;
+            int max = numbers[0];
+            int sum =0;
+            int avg = 0;
+            for(int i=0; i<10; i++)
+            {
+                if (numbers[i] < min)
+                    min = numbers[i];
+                if (numbers[i] > max) 
+                    max = numbers[i];
+                sum += numbers[i];
+                avg = sum / 10;
+            }
+            Console.WriteLine("Minimum Value is" + min);
+            Console.WriteLine("Maximum is " + max);
+            Console.WriteLine("Average is " + avg);
+        }
+        public void reverse(int[] numbers)
+        {
+            Console.WriteLine("Array in reverse");
+            for(int i=9; i >= 0; i--)
+            
+            {
+                Console.WriteLine(""+numbers[i]);
+            }
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp28
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            int[] numbers = new int[10];
+            for (i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"Enter value {i + 1}: ");
+                numbers[i] = int.Parse(Console.ReadLine());
+
+            }
+
+            for (i = 0; i < 10; i++)
+            {
+                Console.WriteLine($" {i + 1} Number is:{numbers[i]}");
+
+            }
+
+            FileName get = new FileName();
+            get.mini(numbers);
+            get.reverse(numbers);
+
+            Console.ReadLine();
+        }
+    }
+}
+
+
+

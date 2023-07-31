@@ -1,0 +1,55 @@
+1)using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp29
+{
+    internal class FileName
+    {
+        public void array(int a)
+        {
+            int []number = new int[a];
+
+            for(int i = 0; i < a; i++)
+            {
+                Console.WriteLine($"Enter User input {i+1}" );
+                number[i] = int.Parse(Console.ReadLine());
+            }
+
+            for (int i = 0; i < a; i++)
+            {
+                Console.WriteLine($"User input {number[i]}");
+                
+            }
+            Console.ReadLine();
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp29
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter array size");
+            int a = int.Parse(Console.ReadLine());
+
+            FileName get = new FileName();
+            get.array(a);
+        }
+    }
+}
+
+
+2)
+
+

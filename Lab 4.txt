@@ -1,0 +1,229 @@
+1)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp24
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            convertvalue12 start = new convertvalue12();
+            start.convertvalues3();
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp24
+{
+    internal class convertvalue12
+    {
+        public void convertvalues3()
+        {
+            int a;
+            Console.WriteLine("Enter Kilometers");
+            a = int.Parse(Console.ReadLine());
+
+            int b = a * 1000;
+
+            Console.WriteLine("Meters" + b);
+            Console.ReadLine();
+
+        }
+    }
+}
+
+
+2)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp24
+{
+    internal class convertvalue12
+    {
+        public void convertvalues3(int kilo)
+        {
+           
+
+            int b = kilo * 1000;
+            Console.WriteLine("Meters" + b);
+            Console.ReadLine();
+
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp24
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Kilometers");
+            int kilo = int.Parse(Console.ReadLine());
+            convertvalue12 start = new convertvalue12();
+            start.convertvalues3(kilo);
+        }
+    }
+}
+
+
+3)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp24
+{
+    internal class convertvalue12
+    {
+        public int convertvalues3(int kilo)
+        {
+           
+
+            int b = kilo * 1000;
+            return b;
+            Console.ReadLine();
+
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp24
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Kilometers");
+            int kilo = int.Parse(Console.ReadLine());
+            convertvalue12 start = new convertvalue12();
+            start.convertvalues3(kilo);
+        }
+    }
+}
+
+Q2)
+
+1)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp15
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Enter radius ");
+            int b = int.Parse(Console.ReadLine());
+
+
+
+            int c = b * b * 22 / 7;
+            int d = 2 * b * 22 / 7;
+
+
+
+            Console.WriteLine("Area is " + c);
+            Console.WriteLine("circumference is "+d);
+
+            Console.ReadLine();
+
+        }
+    }
+}
+
+2)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp25
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Radius");
+            int r = int.Parse(Console.ReadLine());
+
+            findvalue get = new findvalue();
+            
+
+            int area = get.findarea(r);
+            int circ = get.findc(r);
+
+            Console.WriteLine("Area is " + area);
+            Console.WriteLine("Cir is" + circ);
+            Console.ReadLine();
+
+        }
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp25
+{
+    internal class findvalue
+    {
+        public int findarea(int r)
+        {
+            int area = r * r * 22 / 7;
+            return area;
+        }
+
+        public int findc(int r)
+        {
+            int cir = 2 * 22 / 7 * r;
+            return cir;
+        }
+    }
+}
+
+
+

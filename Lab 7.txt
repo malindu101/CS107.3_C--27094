@@ -1,0 +1,141 @@
+7)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp29
+{
+    internal class FileName
+    {
+        public void array(int a)
+        {
+            int []number = new int[a];
+            int b = a - 1;
+            int[] sum1 = new int[b];
+            int[] product = new int[b];
+            int[] Scalarp = new int[b];
+            int sum = 0;
+            int sump = 0;
+
+            for(int i = 0; i < a; i++)
+            {
+                Console.WriteLine($"Enter User input {i+1}" );
+                number[i] = int.Parse(Console.ReadLine());
+            }
+
+            for (int i = 0; i < a; i++)
+            {
+               sum += number[i];
+                
+            }
+
+            for(int i = 0; i < a-1;i++)
+            {
+                for(int j = 0; j < b; j++)
+                {
+                    sum1[j] = number[i] + number[i + 1];                }
+                
+            }
+
+            for (int i = 0; i < a-1; i++)
+            {
+                for (int j = 0; j < b; j++)
+                {
+                    product[j] = number[i] * number[i + 1];
+                }
+
+            }
+            for (int i=0; i< b; i++)
+            {
+                Scalarp[i] = sump;
+            }
+
+            Console.WriteLine("Scalar Sum"+sum);
+            Console.WriteLine("Vector Sum");
+            for (int j = 0; j < b; j++)
+            {
+
+                Console.WriteLine("" + sum1[j]);
+            }
+            Console.WriteLine("Vector product");
+            for (int j = 0; j < b; j++)
+            {
+
+                
+                Console.WriteLine("" + product[j]);
+
+            }
+           
+            Console.WriteLine("Scalar Product");
+            for (int j = 0; j < b; j++)
+            {
+
+
+                Console.WriteLine("" + Scalarp[j]);
+
+            }
+
+
+
+            Console.ReadLine();
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp29
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter array size");
+            int a = int.Parse(Console.ReadLine());
+
+            FileName get = new FileName();
+            get.array(a);
+        }
+    }
+}
+
+
+
+8)
+
+using System;
+
+class Animal
+{
+    public virtual void PrintInfo()
+    {
+        Console.WriteLine("I am an animal");
+    }
+}
+
+class Dog : Animal
+{
+    public override void PrintInfo()
+    {
+        base.PrintInfo(); // Call the base class method first (optional)
+        Console.WriteLine("I have four legs");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Animal animal = new Animal();
+        Dog dog = new Dog();
+
+        animal.PrintInfo();
+        dog.PrintInfo();
+    }
+}
